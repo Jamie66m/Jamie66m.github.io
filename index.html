@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jamie Maxwell | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <header class="portfolioHeader">
+    <div class="navbar" id="myNavBar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+      <div class="navbarContent">
+        <div class="initials">
+          <span class="initialsSpan">//</span> J.M
+        </div>
+        <div class="navbarlinks">
+          <a href="#aboutContainer" class="navbarlink">About</a>
+          <a href="#skills" class="navbarlink">Skills</a>
+          <a href="#experience" class="navbarlink">Experience</a>
+          <a href="#projects" class="navbarlink">Projects </a>
+          <a href="#contact" class="navbarlink">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="profileImageandTextContainer">
+      <div class="profileImageContainer">
+        <img src="images/Jamie-2251-9.jpg" alt="profile-img" class="profileImage">
+      </div>
+      <div class="textRotationContainer">
+        <p class="textRotationPara">My name is Jamie Maxwell and I am a
+          <span class="txt-rotate" data-period="2000"
+            data-rotate='[ "Junior Web Developer!", "sports enthusiast!", "people person!", "board game lover!" ]'></span>
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="aboutContainer">
+      <button class="openbtn" onclick="openNav()">&#9776; About Menu</button>
+      <div id="aboutSidepanel" class="theaboutsidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>Overview</p>
+        <p>Work passions</p>
+        <p>Hobbies</p>
+        <p>Achievements</p>
+        <p>Timeline</p>
+      </div>
+      <div class="aboutContent">
+        <h1>ABOUT</h1>
+      </div>
+    </div>
+    <div id="skills">
+      <div class="skillsContent">
+        <h1>skills</h1>
+      </div>
+    </div>
+    <div id="experience">
+      <h1>experience</h1>
+    </div>
+    <div id="projects">
+      <h1>projects</h1>
+    </div>
+  </main>
+  <footer id="contact">
+
+  </footer>
+</body>
+
+</html>
