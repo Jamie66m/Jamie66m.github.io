@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
-  <script src="js/script.js"></script>
 </head>
 
 <body>
   <header class="portfolioHeader">
-    <div class="navbar" id="myNavBar">
+    <div class="navbar" id="myNavBar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>
@@ -52,26 +52,179 @@
   </header>
   <main>
     <div id="aboutContainer">
-      <button class="openbtn" onclick="openNav()">&#9776; About Menu</button>
-      <div id="aboutSidepanel" class="theaboutsidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <p>Overview</p>
-        <p>Work passions</p>
-        <p>Hobbies</p>
-        <p>Achievements</p>
-        <p>Timeline</p>
-      </div>
       <div class="aboutContent">
-        <h1>ABOUT</h1>
+        <h1>About</h1>
       </div>
     </div>
     <div id="skills">
       <div class="skillsContent">
-        <h1>skills</h1>
+        <h1>Skills</h1>
+      </div>
+      <div class="FrontendandBackend">
+        <div class="Frontend">
+          <div class="FrontendHeading">
+            <h2>Front-end</h2>
+          </div>
+          <div class="FrontendSkills" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <figure>
+              <i class="devicon-html5-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-css3-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-sass-original"></i>            
+            </figure>
+            <figure>
+              <i class="devicon-javascript-plain"></i>
+            </figure>
+            <figure>
+              <i class="devicon-jquery-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-react-original-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-bootstrap-plain-wordmark"></i>
+            </figure>
+          </div>
+        </div>
+        <div class="Backend">
+          <div class="BackendHeading">
+            <h2>Back-end</h2>
+          </div>
+          <div class="BackendSkills" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <figure>
+              <i class="devicon-babel-plain"></i>
+            </figure>
+            <figure>
+              <i class="devicon-webpack-plain"></i>            
+            </figure>
+            <figure>
+              <i class="devicon-django-plain"></i>
+            </figure>
+            <figure>
+              <i class="devicon-express-original"></i>
+            </figure>
+            <figure>
+              <i class="devicon-mongodb-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-nodejs-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-postgresql-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-python-plain-wordmark"></i>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="OtherTechincalandSoft">
+        <div class="Technical">
+          <div class="TechnicalHeading">
+            <h2>Other Technical Skills</h2>
+          </div>
+          <div class="TechnicalSkills" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <figure>
+              <i class="devicon-babel-plain"></i>
+            </figure>
+            <figure>
+              <i class="devicon-webpack-plain"></i>            
+            </figure>
+            <figure>
+              <i class="devicon-apple-original"></i>
+            </figure>
+            <figure>
+              <i class="devicon-chrome-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-git-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-github-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-heroku-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-mocha-plain"></i>
+            </figure>
+            <figure>
+              <i class="devicon-moodle-plain"></i>
+            </figure>
+            <figure>
+              <i class="devicon-slack-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-trello-plain-wordmark"></i>
+            </figure>
+            <figure>
+              <i class="devicon-visualstudio-plain"></i>
+            </figure>
+          </div>
+        </div>
+        <div class="Soft">
+          <div class="SoftHeading">
+            <h2>Soft Skills</h2>
+          </div>
+          <div class="SoftSkills" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>Problem solving</h2>
+            <h2>Customer serivce</h2>
+            <h2>Adaptable</h2>
+            <h2>Interpersonal communication</h2>
+            <h2>Decision-making</h2>
+            <h2>Teamwork</h2>
+            <h2>Tenacious work ethic</h2>
+            <h2>Professionalism</h2>
+            <h2>Time Management</h2>
+          </div>
+        </div>
       </div>
     </div>
     <div id="experience">
-      <h1>experience</h1>
+      <div class="experienceContent">
+        <h1>Experience</h1>
+      </div>
+      <div class="timeline">
+        <div class="timelinecontainer left">
+          <div class="timelinecontent" data-aos="slide-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>1996</h2>
+            <p>I was born</p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="timelinecontent" data-aos="slide-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>2015</h2>
+            <p>Left Uppingham School</p>
+          </div>
+        </div>
+        <div class="timelinecontainer left">
+          <div class="timelinecontent" data-aos="slide-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>2016</h2>
+            <p>Went Travelling</p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="timelinecontent" data-aos="slide-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>2019</h2>
+            <p>Left Oxford Brookes (What did I do in this time)</p>
+          </div>
+        </div>
+        <div class="timelinecontainer left">
+          <div class="timelinecontent" data-aos="slide-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>2019 - June</h2>
+            <p>Worked at Let's Do This</p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="timelinecontent" data-aos="slide-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2>2020</h2>
+            <p>General Assembly Software Engineering Immersive</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="projects">
       <h1>projects</h1>
@@ -80,6 +233,13 @@
   <footer id="contact">
 
   </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
 </body>
 
 </html>

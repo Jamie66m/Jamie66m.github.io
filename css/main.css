@@ -1,9 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 body {
   font-family: 'Crimson Text', serif;
 }
 
 .portfolioHeader {
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   background: -webkit-linear-gradient(rgb(57, 149, 202), rgb(185, 219, 241));
   display: flex;
@@ -14,9 +24,6 @@ body {
   height: 12%;
   width: 100%;
   background-color: rgb(102, 135, 156);
-  position: fixed;
-  top: 0; 
-  width: 100%; 
   box-shadow: 0 4px 2px -2px gray;
   overflow: hidden;
 }
@@ -26,7 +33,6 @@ body {
   height: 10%;
   background: #ccc;
 }
-
 
 .progress-bar {
   height: 100%;
@@ -87,20 +93,6 @@ body {
   color: white;
 }
 
-.navbarlinks a::after {
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #444;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
-
-.navbarlinks a:hover::after {
-  width: 100%;
-}
-
 .navbar .icon {
   display: none;
 }
@@ -157,94 +149,408 @@ main {
 
 
 #aboutContainer {
-  height: 50vh;
+  height: 150vh;
   width: 100%;
   /* border: 2px solid blue; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-color: rgb(232, 239, 240);
   /* margin-top: 50px; */
 }
 
-.theaboutsidepanel {
-  height: 300px; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-}
-
-/* The sidepanel links */
-.theaboutsidepanel p {
-  padding: 8px 8px 20px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.theaboutsidepanel p:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.theaboutsidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  text-decoration: none;
-}
-
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  height: 15%;
-  width: 20%;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
 .aboutContent {
-  height: 100%;
-  width: 80%;
-  /* border: 2px solid red; */
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutContent h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(39, 76, 126);
+  margin-top: 30px;
 }
 
 #skills {
-  height: 50vh;
+  height: 150vh;
   width: 100%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  background: -webkit-linear-gradient(rgb(57, 149, 202), rgb(185, 219, 241));
+  display: flex;
+  flex-direction: column;
 }
 
-#experience {
-  height: 50vh;
+.skillsContent {
   width: 100%;
-  border: 2px solid blue;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.skillsContent h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-top: 30px;
+}
+
+.FrontendandBackend {
+  height: 44%;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Frontend {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.FrontendHeading {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.FrontendHeading h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.FrontendSkills {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 2px solid yellow; */
+}
+
+.FrontendSkills figure i {
+  font-size: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Backend {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BackendHeading {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.BackendHeading h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.BackendSkills {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 2px solid yellow; */
+}
+
+.BackendSkills figure i {
+  font-size: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.OtherTechincalandSoft {
+  height: 44%;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Technical {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TechnicalHeading {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TechnicalHeading h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.TechnicalSkills {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 2px solid yellow; */
+}
+
+.TechnicalSkills figure i {
+  font-size: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Soft {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SoftHeading {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.SoftHeading h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.SoftSkills {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* border: 2px solid yellow; */
+}
+
+.SoftSkills h2 {
+  font-size: 40px;
+}
+
+
+#experience {
+  height: 250vh;
+  width: 100%;
+  /* border: 2px solid blue; */
+  background-color: rgb(232, 239, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.experienceContent {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.experienceContent h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(39, 76, 126);
+  margin-top: 30px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
+}
+
+.timelinecontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid green; */
+  /* display: flex; */
+}
+
+.timelinecontainer:nth-of-type(1) {
+  height: 100px;
+}
+
+.timelinecontainer:nth-of-type(5) {
+  height: 400px;
+}
+
+.timelinecontainer:nth-of-type(6) {
+  height: 400px;
+}
+
+.timelinecontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: -50%;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.timelinecontent {
+  /* padding: 60px 100px; */
+  background-color: white;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.timelinecontent h2 {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 2px solid gold;
+}
+
+.timelinecontainer:nth-of-type(1) .timelinecontent h2 {
+  height: 40%;
+}
+
+.timelinecontainer:nth-of-type(5) .timelinecontent h2 {
+  height: 11%;
+}
+
+.timelinecontainer:nth-of-type(6) .timelinecontent h2 {
+  height: 11%;
+}
+
+.timelinecontent p {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.timelinecontainer:nth-of-type(1) .timelinecontent p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 #projects {
   height: 50vh;
   width: 100%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  background: -webkit-linear-gradient(rgb(57, 149, 202), rgb(185, 219, 241));
 }
 
 #contact {
-  background-color: green;
   height: 50vh;
   width: 100vw;
+  background-color: rgb(232, 239, 240);
 }
 
 
